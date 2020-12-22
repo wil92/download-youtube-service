@@ -31,7 +31,7 @@ function addDownloadLink() {
             downloadLink.style.position = "absolute";
             downloadLink.style.background = "#28a739";
             downloadLink.style.padding = "2px";
-            downloadLink.style.cursor = "s-resize";
+            downloadLink.style.cursor = "default";
             downloadLink.innerHTML = "download";
             const href = item.href;
             downloadLink.addEventListener('click', function(event) {
