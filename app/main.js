@@ -77,6 +77,7 @@ const requestListener = function (req, res) {
             req.on('end', () => resolve(JSON.parse(body)));
         })).then((data) => {
             if (data && data.link) {
+                console.log(data.link);
                 downloadPromise = downloadPromise
                     .catch(console.error)
                     .then(() => downloadYoutubeVideo(data.link));
